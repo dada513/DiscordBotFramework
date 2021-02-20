@@ -37,9 +37,9 @@ export class Plugin {
  * @param {any} parsed
  */
 
-const files = fs.readdirSync(path.join(__dirname, "plugins"));
-files.forEach((file) => {
-  const plugin = require("./plugins/" + file);
+const dirs = fs.readdirSync(path.join(__dirname, "plugins"));
+dirs.forEach((dir) => {
+  const plugin = require(`./plugins/${dir}/${dir}.js`);
   new plugin.default();
 });
 

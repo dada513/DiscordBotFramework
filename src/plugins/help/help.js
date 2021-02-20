@@ -1,5 +1,5 @@
-import { Plugin } from "../index";
-import helpEmbed from "../embeds/help.embed";
+import { Plugin } from "../../index";
+import helpEmbed from "./help.embed";
 
 export default class HelpCommand extends Plugin {
   constructor() {

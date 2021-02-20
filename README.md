@@ -1,3 +1,3 @@
-# WIP
+# DiscordBotFramework
 
-The readme is work in progress
+For more info, check out the [wiki](https://git.d513.space/d513/DiscordBotFramework/wiki)

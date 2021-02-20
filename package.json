@@ -1,10 +1,10 @@
 {
-  "name": "botfork",
+  "name": "dbf",
   "version": "1.0.0",
   "main": "src/esm.js",
   "repository": "https://git.d513.space/d513/BotFork",
   "author": "dada513",
-  "license": "proprietary",
+  "license": "MIT",
   "scripts": {
     "start": "node src/esm.js",
     "dev": "nodemon ."

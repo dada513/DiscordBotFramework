@@ -1,10 +1,17 @@
-import * as config from "../config.json";
 import * as lang from "../lang.json";
-import * as sql from "./sql";
 import { parse } from "discord-command-parser";
 import Discord, { Message } from "discord.js";
 import fs from "fs-extra";
 import path from "path";
+import mongoose from "mongoose";
+// import "./models/something.js"
+
+mongoose.connect(process.env.MONGO, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+  useCreateIndex: true,
+});
 
 const commands = {};
 const eventBank = { onready: [] };
@@ -61,4 +68,4 @@ client.on("message", async (message) => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);

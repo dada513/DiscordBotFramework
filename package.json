@@ -6,16 +6,18 @@
   "author": "dada513",
   "license": "MIT",
   "scripts": {
-    "start": "node src/esm.js",
-    "dev": "nodemon ."
+    "start": "node -r dotenv/config src/esm.js",
+    "dev": "nodemon -r dotenv/config ."
   },
   "private": true,
   "dependencies": {
     "discord-command-parser": "^1.5.3",
     "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "fs-extra": "^9.1.0",
     "knex": "^0.21.17",
+    "mongoose": "^5.12.5",
     "mysql2": "^2.2.5"
   },
   "devDependencies": {
